@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #212121;
+  font-family: Roboto;
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+}
+
+.flex h1 {
+  color: #5688ec;
+  font-weight: 900;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 250px) {
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 0;
+  }
+
+  .flex img {
+    height: 3rem;
+    width: auto;
+    margin-right: 1rem;
+  }
+
+  .one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .one h3,
+  p {
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .one img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  /* Include the form part */
+  .two {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    margin: 0 auto 0 auto;
+    border-radius: 5px;
+    margin-top: 2rem;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input input {
+    border: none;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+    padding-top: 1.5rem;
+    width: 70%;
+  }
+
+  .gender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0 1rem 0;
+  }
+
+  .gender-gap {
+    padding: 0 2.5rem 0 0.5rem;
+  }
+
+  .gender label[for="male"] {
+    padding-right: 3.5rem;
+  }
+
+  .checkboxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    width: 50%;
+  }
+
+  .item:nth-of-type(2),
+  .item:nth-of-type(4) {
+    justify-content: flex-start;
+  }
+
+  #weights,
+  #dumbbells,
+  #ropes,
+  #shirt {
+    margin-right: 0.5rem;
+  }
+
+  .btn {
+    background-color: #212121;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  /* Section three  */
+  .equip-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .equip-list h2 {
+    color: white;
+    padding: 2rem 0;
+    height: auto;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 1.5rem;
+  }
+
+  .card img {
+    width: 6rem;
+    height: 6rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  /* Section 4 */
+
+  .equipment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  .equipment h4 {
+    color: #212121;
+    padding: 1.5rem 0;
+    font-size: large;
+  }
+
+  .equipment img {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  /* Section 5 */
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member h2 {
+    color: white;
+    padding: 1.5rem 0;
+  }
+
+  .member img {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .flex {
+    justify-content: flex-start;
+    margin-left: 2.5rem;
+    padding: 1rem 0;
+  }
+
+  .flex h1 {
+    font-size: 2rem;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 35rem;
+  }
+
+  .one h3,
+  p {
+    display: none;
+  }
+
+  .top .one img {
+    height: 30rem;
+    width: 35rem;
+    margin-top: 3rem;
+  }
+
+  .top .two {
+    margin: 3rem 1.5rem;
+    height: 25rem;
+    width: 30rem;
+  }
+
+  .input input {
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .gender {
+    padding: 1.5rem 0 1rem 0;
+  }
+
+  .gender label[for="male"] {
+    margin-right: 5.5rem;
+    padding-right: 0;
+  }
+
+  .gender label[for="female"] {
+    margin-right: 3rem;
+    padding-right: 1.2rem;
+  }
+
+  .btn {
+    background-color: #212121;
+    padding: 1rem;
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    margin: 3rem;
+  }
+
+  .card img {
+    width: 9rem;
+    height: 9rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .equipment,
+  .member {
+    width: 50%;
+  }
+}
